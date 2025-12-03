@@ -23,3 +23,12 @@ export interface CompanyInfo {
   whatsapp: string;
   mapUrl: string; // Placeholder for map embed link
 }
+
+export interface ContactMessage {
+  id: number;
+  created_at: string;
+  full_name: string;
+  phone_number: string;
+  service_type: string;
+  message: string;
+}

@@ -64,9 +64,13 @@ const Footer: React.FC = () => {
         
         <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
           <p>&copy; {new Date().getFullYear()} {COMPANY_INFO.name}. All rights reserved.</p>
-          <p className="mt-2 md:mt-0 flex items-center gap-1">
-            Developed by <span className="text-blue-400 font-medium">Sarathkumar</span>
-          </p>
+          <div className="flex items-center gap-4 mt-2 md:mt-0">
+             <Link to="/admin" className="hover:text-slate-400 transition-colors">Admin Login</Link>
+             <span className="text-slate-700">|</span>
+             <p className="flex items-center gap-1">
+              Developed by <span className="text-blue-400 font-medium">Sarathkumar</span>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
